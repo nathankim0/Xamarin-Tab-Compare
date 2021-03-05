@@ -6,6 +6,9 @@ namespace XamarinTabCompare.Fragments
     {
         public SecondView()
         {
+            var pageContents = new PageContents(2) { BackgroundColor = Color.Beige };
+
+            Content = pageContents;
         }
     }
 }

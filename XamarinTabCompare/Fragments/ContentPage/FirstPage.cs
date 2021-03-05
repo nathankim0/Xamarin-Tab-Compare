@@ -7,7 +7,7 @@ namespace XamarinTabCompare.Fragments
     {
         public FirstPage()
         {
-            var pageContents = new PageContents(1);
+            var pageContents = new PageContents(1) {BackgroundColor=Color.AliceBlue };
 
             Content = pageContents;
         }

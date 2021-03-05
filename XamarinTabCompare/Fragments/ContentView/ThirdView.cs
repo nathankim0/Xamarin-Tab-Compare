@@ -7,6 +7,9 @@ namespace XamarinTabCompare.Fragments
     {
         public ThirdView()
         {
+            var pageContents = new PageContents(3) { BackgroundColor = Color.LightPink };
+
+            Content = pageContents;
         }
     }
 }

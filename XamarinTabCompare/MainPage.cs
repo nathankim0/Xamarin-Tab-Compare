@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamarinTabCompare.TabViewXCT;
 
 namespace XamarinTabCompare
 {
@@ -14,6 +15,8 @@ namespace XamarinTabCompare
 
         public MainPage()
         {
+            Title = "Nathan Tab Compare";
+
             var tabbedPageButton = new Button()
             {
                 Text = "Tabbed Page (Top)",
@@ -30,12 +33,34 @@ namespace XamarinTabCompare
             };
             tabbedPageBottomButton.Clicked += OnTabbedPageBottomButtonClicked;
 
+            var tabViewButton = new Button()
+            {
+                Text = "TabView (XCT)",
+                FontSize = 20,
+                Padding = 20
+            };
+            tabViewButton.Clicked += OnTabViewButtonClicked;
+
+            var tabViewXamlButton = new Button()
+            {
+                Text = "TabView with Xaml (fab) (XCT)",
+                FontSize = 20,
+                Padding = 20
+            };
+            tabViewXamlButton.Clicked += OnTabViewXamlButtonClicked;
+
             scrollView = new ScrollView()
             {
                 Padding = 10,
                 Content = new StackLayout()
                 {
-                    Children = {tabbedPageButton, tabbedPageBottomButton }
+                    Children =
+                    {
+                        tabbedPageButton,
+                        tabbedPageBottomButton,
+                        tabViewButton,
+                        tabViewXamlButton
+                    }
                 }
             };
 
@@ -50,6 +75,16 @@ namespace XamarinTabCompare
         private async void OnTabbedPageBottomButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new NTabbedPageBottom());
+        }
+
+        private async void OnTabViewButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NTabView());
+        }
+
+        private async void OnTabViewXamlButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NTabViewWithXaml());
         }
     }
 }
