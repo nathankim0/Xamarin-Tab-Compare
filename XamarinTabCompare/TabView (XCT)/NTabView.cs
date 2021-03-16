@@ -14,19 +14,19 @@ namespace XamarinTabCompare.TabViewXCT
             var tabView = new TabView
             {
                 TabStripPlacement = TabStripPlacement.Bottom,
-                TabStripBackgroundColor = Color.Blue,
+                TabStripBackgroundColor = Color.White,
                 TabStripHeight = 60,
-                TabIndicatorColor = Color.Yellow,
-                TabContentBackgroundColor = Color.Yellow,
+                //TabIndicatorColor = Color.White,
+                //TabContentBackgroundColor = Color.Yellow,
                 
             };
 
             var tabViewItem1 = new TabViewItem
             {
                 Text = "Tab 1",
-                TextColor = Color.White,
-                TextColorSelected = Color.Yellow,
-                BackgroundColor=Color.Red
+                //TextColor = Color.White,
+                //TextColorSelected = Color.Yellow,
+                
             };
             tabViewItem1.Content = new FirstView();
             tabViewItem1.Icon = new FontImageSource
@@ -39,8 +39,8 @@ namespace XamarinTabCompare.TabViewXCT
             var tabViewItem2 = new TabViewItem
             {
                 Text = "Tab 2",
-                TextColor = Color.White,
-                TextColorSelected = Color.Yellow
+                //TextColor = Color.White,
+                //TextColorSelected = Color.Yellow
             };
             tabViewItem2.Content = new SecondView();
             tabViewItem2.Icon = new FontImageSource
@@ -53,8 +53,8 @@ namespace XamarinTabCompare.TabViewXCT
             var tabViewItem3 = new TabViewItem
             {
                 Text = "Tab 3",
-                TextColor = Color.White,
-                TextColorSelected = Color.Yellow
+                //TextColor = Color.White,
+                //TextColorSelected = Color.Yellow
             };
             tabViewItem3.Content = new ThirdView();
             tabViewItem3.Icon = new FontImageSource

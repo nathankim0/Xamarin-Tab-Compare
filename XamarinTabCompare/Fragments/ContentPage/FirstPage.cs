@@ -10,6 +10,8 @@ namespace XamarinTabCompare.Fragments
             var pageContents = new PageContents(1) {BackgroundColor=Color.AliceBlue };
 
             Content = pageContents;
+
+            System.Diagnostics.Debug.WriteLine("FirstPage Loaded!");
         }
     }
 }

@@ -14,6 +14,8 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.3" />
+    <PackageReference Include="Sharpnado.Tabs" Version="2.1.0" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="MainPage.xaml" />
@@ -28,6 +30,10 @@
     <Folder Include="Fragments\ContentView\" />
     <Folder Include="Icon\" />
     <Folder Include="TabView %28XCT%29\" />
+    <Folder Include="SharpnadoTabView\" />
+    <Folder Include="Fragments\Moneys\" />
+    <Folder Include="Fragments\Moneys\" />
+    <Folder Include="Fragments\Moneys\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Icon\materialdesignicons.ttf" />

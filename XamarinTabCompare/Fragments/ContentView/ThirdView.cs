@@ -10,6 +10,8 @@ namespace XamarinTabCompare.Fragments
             var pageContents = new PageContents(3) { BackgroundColor = Color.LightPink };
 
             Content = pageContents;
+
+            System.Diagnostics.Debug.WriteLine("ThirdView Loaded!");
         }
     }
 }
